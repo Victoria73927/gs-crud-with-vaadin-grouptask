@@ -15,7 +15,7 @@ public class CrudWithVaadinApplicationTests {
 
 	@Test
 	public void shouldFillOutComponentsWithDataWhenTheApplicationIsStarted() {
-		then(this.repository.count()).isEqualTo(5);
+		then(this.repository.count()).isEqualTo(6);
 	}
 
 	@Test
