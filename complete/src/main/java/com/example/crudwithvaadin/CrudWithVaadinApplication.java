@@ -21,6 +21,8 @@ public class CrudWithVaadinApplication {
 	public CommandLineRunner loadData(CustomerRepository repository) {
 		return (args) -> {
 			// save a couple of customers
+			repository.save(new Customer("James", "Bauer"));
+			repository.save(new Customer("Katherine", "Bauer"));
 			repository.save(new Customer("Victoria", "Mcpepple"));
 			repository.save(new Customer("Chloe", "O'Brian"));
 			repository.save(new Customer("Sylvain", "Mwanangwu"));
